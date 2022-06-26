@@ -1,1 +1,1 @@
-# Una simple página web de un restaurante con HTML, CSS y Bootstrap / A simple web with HTML, CSS and bootstrap
+# Una simple página web de un restaurante con HTML, CSS y Bootstrap / A simple web with HTML, CSS and Bootstrap
