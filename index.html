@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ 
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="PabloFC">
+    <title>Wahaca</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+	<main>
+		 <!--Menu Principal-->
+		 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand " href="#"><img src="./img/logo.png" class="logo" alt="logo wahaca"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menú</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="#recetas">Recetas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Restaurantes</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown03">
+                              <a class="dropdown-item" href="#granada">Wahaca Granada</a>
+                              <a class="dropdown-item" href="#madrid">Wahaca Madrid</a>
+                            </div>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacta">Contacta</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link reserva" href="tel:958278060">Reserva</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+		<!--Carrousel-->
+		<div id="carousel-mexicano" class="carousel slide fluid-carousel d-none d-sm-block" data-ride="carousel" data-interval="3000">
+				<!-- Indicadores -->
+				<ul class="carousel-indicators">
+					<li data-target="#carousel-mexicano" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-mexicano" data-slide-to="1"></li>
+					<li data-target="#carousel-mexicano" data-slide-to="2"></li>
+				</ul>
+	
+				<!-- Imágenes -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="carousel-caption d-none d-sm-block fondoTransparente">
+							<h4>Disfruta nuestro ambiente</h4>
+							<a href="https://www.wahaca.co.uk/locations/" class="boton">Ver más</a>
+						</div>
+					</div>
+				
+				<div class="carousel-item">
+					<div class="carousel-caption d-none d-sm-block fondoTransparente">
+						<h4>Reserva mesa online</h4>
+						<a href="#contacta" class="boton">Reservar</a>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-caption d-none d-sm-block fondoTransparente">
+						<h4>Pide a domicilio</h4>
+						<a href="#menu" class="boton">Ver menú</a>
+					</div>
+				</div>
+			</div>
+	
+			<!-- Siguiente y anterior -->
+			<a class="carousel-control-prev" href="#carousel-mexicano" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#carousel-mexicano" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+
+		<!--SECCION MENU-->
+		<article id="menu">
+			<h1>Menú</h1>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">Ensalada imperial</h5>
+							</div>
+							<img src="img/ensaladas.jpg" class="card-img-top img-fluid" alt="...">
+							<div class="card-body">
+								<p class="card-text">Salsa de la casa y frijoles negros, espelta orgánica y hojas mixtas con aguacate.</p>
+								<a href="https://www.wahaca.co.uk/takeaway/" target="_blank" class="btn btn-success">Pedir</a>
+							</div>
+							<div class="card-footer">
+								<span class="badge bg-info">200 calorías</span>
+								<span class="badge bg-success">10.25 €</span>
+							</div>
+						</div>
+					</div>
+	
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">Coliflor con queso</h5>
+							</div>
+							<img src="img/coliflor.png" class="card-img-top img-fluid" alt="...">
+							<div class="card-body">
+								<p class="card-text">Coliflor crujiente rebozada con queso con un toque de especias mexicanas y limón.</p>
+								<a href="https://www.wahaca.co.uk/takeaway/" target="_blank" class="btn btn-success">Pedir</a>
+							</div>
+							<div class="card-footer">
+								<span class="badge bg-info">255 calorías</span>
+								<span class="badge bg-success">5.75 €</span>
+							</div>
+						</div>
+					</div>
+	
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">Tacos de pescado</h5>
+							</div>
+							<img src="img/Fish-taco.jpg" class="card-img-top img-fluid" alt="...">
+							<div class="card-body">
+								<p class="card-text">Abadejo con repollo rallado, mayonesa de chipotle y pepino encurtido.</p>
+								<a href="https://www.wahaca.co.uk/takeaway/" target="_blank" class="btn btn-success">Pedir</a>
+							</div>
+							<div class="card-footer">
+								<span class="badge bg-info">192 calorías</span>
+								<span class="badge bg-success">6.50 €</span>
+							</div>
+						</div>
+					</div>
+	
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">Burritos</h5>
+							</div>
+							<img src="img/burritos.jpg" class="card-img-top img-fluid" alt="...">
+							<div class="card-body">
+								<p class="card-text">Carne de cerdo con cebolla rosadas en escabeche, frijoles y arroz integral.</p>
+								<a href="https://www.wahaca.co.uk/takeaway/" target="_blank" class="btn btn-success">Pedir</a>
+							</div>
+							<div class="card-footer">
+								<span class="badge bg-info">433 calorías</span>
+								<span class="badge bg-success">9 €</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">Nachos</h5>
+							</div>
+							<img src="img/nachos.jpg" class="card-img-top img-fluid" alt="...">
+							<div class="card-body">
+								<p class="card-text">
+									Chorizo, salsa de queso, tomatillo, salsa de aguacate y aceitunas.</p>
+								<a href="https://www.wahaca.co.uk/takeaway/" target="_blank" class="btn btn-success">Pedir</a>
+							</div>
+							<div class="card-footer">
+								<span class="badge bg-info">377 calorias</span>
+								<span class="badge bg-success">4.40 €</span>
+							</div>
+						</div>
+					</div>
+	
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">Taquito</h5>
+							</div>
+							<img src="img/taquito.jpg" class="card-img-top img-fluid" alt="...">
+							<div class="card-body">
+								<p class="card-text">Cebolla caramelizada, salsa de chipotle en una crujiente tortilla de maíz.</p>
+								<a href="https://www.wahaca.co.uk/takeaway/" target="_blank" class="btn btn-success">Pedir</a>
+							</div>
+							<div class="card-footer">
+								<span class="badge bg-info">299 calorias</span>
+								<span class="badge bg-success">5.75 €</span>
+							</div>
+						</div>
+					</div>
+	
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">Tacos de pollo</h5>
+							</div>
+							<img src="img/tacos_pollo.jpg" class="card-img-top img-fluid" alt="...">
+							<div class="card-body">
+								<p class="card-text">Servido frito crujiente con cebollas rosadas en escabeche.</p>
+								<a href="https://www.wahaca.co.uk/takeaway/" target="_blank" class="btn btn-success">Pedir</a>
+							</div>
+							<div class="card-footer">
+								<span class="badge bg-info">420 calorías</span>
+								<span class="badge bg-success">3.99 €</span>
+							</div>
+						</div>
+					</div>
+	
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">Brownie</h5>
+							</div>
+							<img src="img/chocolate.jpg" class="card-img-top img-fluid" alt="...">
+							<div class="card-body">
+								<p class="card-text">Con helado de caramelo, galleta y salsa de dulce de leche.</p>
+								<a href="https://www.wahaca.co.uk/takeaway/" target="_blank" class="btn btn-success">Pedir</a>
+							</div>
+							<div class="card-footer">
+								<span class="badge bg-info">500 calorías</span>
+								<span class="badge bg-success">5.95 €</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+		</article>
+
+		<!--SECCION RECETAS-->
+		<section id="recetas">
+			<h2 class="h2_recetas">Receta de la semana</h2>
+			<a href="#" name="vid"></a>
+			<iframe id="video" height="600px"  src="https://www.youtube.com/embed/d114vFw7EFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</section>
+
+		<!--SECCION NUESTROS RESTAURANTES-->
+		<section id="nuestros_restaurantes">
+			<h2 class="h2_nuestrosRestaurantes">Nuestros restaurantes</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2">
+						<div id="accordion">
+							<div class="card">
+								<div class="card-header card_header_acordeon" id="granada">
+									<a class="btn btn-info btn-block" data-toggle="collapse" href="#collapseGranada" aria-expanded="false" aria-controls="collapseGranada">
+										Wahaca Granada
+									</a>
+								</div>
+
+								<div id="collapseGranada" class="collapse show" aria-labelledby="Granada" data-parent="#accordion">
+									<div class="card-body granada">
+										<img src="img/direccion.jpg" class="img-fluid">
+										<div class="info_granada">
+											<p><i class="fas fa-map-marker-alt" style="color:var(--pink) !important"></i><strong> Dirección:</strong></p>
+											<p>Avda. Doctor Olóriz, 6.</p>
+											<p>Granada, 18012.</p>
+											<p><i class="fas fa-envelope" style="color:var(--pink) !important"></i><strong> Email:</strong></p>
+											<p>wahaca@doctoroloriz.com</p>
+											<p><i class="fas fa-phone" style="color:var(--pink) !important"></i><strong> Teléfono:</strong></p>
+											<p>958 27 80 60</p>
+											<p><i class="fas fa-clock "style="color:var(--pink) !important"></i><strong> Horario:</strong></p>
+											<p>Lunes a viernes: 12.30h a 21.30h</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header card_header_acordeon" id="madrid">
+									<a class="btn btn-info btn-block" data-toggle="collapse" href="#collapseMadrid" aria-expanded="false" aria-controls="collapseMadrid" >
+										Wahaca Madrid
+									</a>
+								</div>
+								<div id="collapseMadrid" class="collapse show" aria-labelledby="Madrid" data-parent="#accordion">
+									<div class="card-body madrid">
+										<img src="img/direccion2.jpg" class="img-fluid">
+										<div class="info_madrid">
+											<p><i class="fas fa-map-marker-alt" style="color:var(--pink) !important"></i><strong> Dirección:</strong></p>
+											<p>Plaza San Juan de Letrán 5.</p>
+											<p>Madrid, 18012.</p>
+											<p><i class="fas fa-envelope" style="color:var(--pink) !important"></i><strong> Email:</strong></p>
+											<p>wahaca@madridcentral.com</p>
+											<p><i class="fas fa-phone" style="color:var(--pink) !important"></i><strong> Teléfono:</strong></p>
+											<p>958 20 60 27</p>
+											<p><i class="fas fa-clock" style="color:var(--pink) !important"></i><strong> Horario:</strong></p>
+											<p>Lunes a viernes: 12.30h a 21.30h</p>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</section>
+
+		<!--Seccción Contacta-->
+
+		<section id="contacta">
+			<h2 class="h2_contacta">Contacta</h2>
+					<form>
+						<div class="container">
+								<div class="form-row">
+									<div class="col-md-6 col-12 mb-3">
+										<label for="validationDefault01" class="color_label_contacta">Nombre</label>
+										<input type="text" class="form-control" id="validationDefault01" placeholder="Nombre" minlength="3" required>
+									</div>
+									
+									<div class="col-md-6 col-12 mb-3">
+										<label for="validationDefaultUsername" class="color_label_contacta">Email</label>
+										<input type="email" class="form-control" id="validationDefaultUsername" placeholder="Email" aria-describedby="inputGroupPrepend2"  required>
+									</div>
+									
+								</div>
+
+								<div class="form-row">
+
+									<div class="col-md-6 col-12 mb-3">
+										<label for="validationDefault06" class="color_label_contacta">Edad </label>
+										<input type="number" step="1" class="form-control" id="validationDefault06" placeholder="Edad" min="18" max="99" minlength="1" maxlength="3" value="18" required>
+									</div>
+									
+									<div class="col-md-6 col-12 mb-3">
+										<label for="validationDefaultPhone" class="color_label_contacta">Teléfono</label>
+										<input type="text" class="form-control" id="validationDefaultPhone" placeholder="676369898" aria-describedby="inputGroupPrepend2"  pattern="(\(\+\d{2,3}\))?\d{9}" required>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="exampleFormControlSelect1" class="color_label_contacta">Motivo</label>
+									<select class="form-control form-control-sm" id="exampleFormControlSelect1">
+										<option>Reservar</option>
+										<option>Pedir online</option>
+										<option>Reclamaciones</option>
+									</select>
+								</div>
+								<!--Textarea-->
+								<div class="form-group">
+									<label for="exampleFormControlTextarea1" class="color_label_contacta">Mensaje</label>
+									<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+								</div>
+								<!--Checkbox-->
+								<div class="form-group">
+									<div class="form-check">
+										<input type="checkbox" class="form-check-input" id="exampleCheck1">
+										<label class="form-check-label color_label_contacta" for="exampleCheck1">Quiero recibir correos promocionales</label>
+									</div>
+								</div>
+								
+								<button class="btn btn-success" type="submit"> 
+									<a href="mailto:wahaca@info.com" style="text-decoration: none; color:white;">Enviar</a>
+								</button>
+						</div>	
+					</form>
+		</section>
+
+		<!--Footer-->
+                            
+        <footer class="container-fluid text-center foot">
+
+            <div class="copyrights">
+                <div id="iconos">
+                    <a href="https://www.facebook.com/wahaca"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/wahaca/?hl=es"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <p class="white-txt"> ©2022 Wahaca
+                    <br><br>
+                </p>
+
+                <hr class="dark-line">
+                <a class="link" href="https://www.wahaca.co.uk/privacy-policy/">Politica de privacidad</a>
+                <a class="link" href="https://www.wahaca.co.uk/environmental-policy/">Aviso Legal</a>
+                <a class="link" href="https://www.wahaca.co.uk/faqs/">FAQS</a>
+                <br><br>
+            </div>
+        </footer>
+		
+		<!--MODAL-->
+		<section id="modal">
+			<div class="modal" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="static" data-keyboard="false">
+						<div class="modal-dialog modal-lg" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Su privacidad es importante para nosotros</h5>
+								</div>
+								<div class="modal-body">
+									<p>Nosotros y nuestros socios almacenamos o accedemos a información en un dispositivo, tales como cookies, y procesamos datos personales, tales como identificadores únicos e información estándar enviada por un dispositivo, para anuncios y contenido personalizados, medición de anuncios y del contenido e información sobre el público, así como para desarrollar y mejorar productos.</p>
+									<p>Con su permiso, nosotros y nuestros socios podemos utilizar datos de localización geográfica precisa e identificación mediante las características de dispositivos. Puede hacer clic para otorgarnos su consentimiento a nosotros y a nuestros socios para que llevemos a cabo el procesamiento previamente descrito. De forma alternativa, puede acceder a información más detallada y cambiar sus preferencias antes de otorgar o negar su consentimiento. Tenga en cuenta que algún procesamiento de sus datos personales puede no requerir de su consentimiento, pero usted tiene el derecho de rechazar tal procesamiento. Sus preferencias se aplicarán solo a este sitio web. Puede cambiar sus preferencias en cualquier momento entrando de nuevo en este sitio web o visitando nuestra política de privacidad.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-success aceptar" data-dismiss="modal">Aceptar</button>
+									<button type="button" class="btn btn-danger rechazar" data-dismiss="modal">Rechazar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+		</section>
+		<script type="text/javascript">
+			$(window).on('load', function() {
+			$('#modal-cookies').modal('show');	
+					});
+		</script>
+	</main>
+	
+</body>
+
+</html>

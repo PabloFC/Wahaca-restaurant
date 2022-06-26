@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Piedra&family=Quicksand:wght@300;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+:root{
+    --black: #000000;
+    --white:#FFFFFF;
+    --dark-grey: #343a40;
+    --pink: #e60065;
+    --yellow: #fff37f;
+    --blue: #0052a1;
+    --sm:14px;
+    --md:16px;
+    --lg:18px;
+}
+h1{
+    text-align: center;
+    color:var(--yellow);
+    padding: 4% 0 4% 0;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    padding: 4% 0 4% 0;
+    font-weight: bold;
+}
+
+/*------------------------------------------------------NAVBAR------------------------------------------------------------------------------------*/
+.logo{
+    width: 16%;
+}
+
+.navbar-brand{
+    text-align: center;
+}
+.nav-item{
+    padding-right: 1%;
+}
+.nav-link{
+    color:var(--dark-grey) !important;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: var(--pink) !important;
+}
+.reserva{
+    background-color: var(--blue);
+    color: var(--yellow) !important;
+}
+.reserva:hover{
+    background-color: transparent;
+    color:var(--blue) !important;
+    border: 1px solid var(--blue);
+}
+
+.dropdown-item{
+    color:var(--dark-grey) !important;
+    font-size: var(--lg);
+}
+.dropdown-item:hover{
+    color: var(--pink) !important;
+}
+.collapse{
+    padding-left: 10%;
+   
+}
+/*------------------------------------------------------SLIDER------------------------------------------------------------------------------------*/
+.fondoTransparente{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--white);
+}
+
+.fluid-carousel .carousel-item{
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+.fluid-carousel .carousel-item:nth-child(1){
+    background-image: url(../img/slider/wahaca1.jpg);
+
+}
+
+.fluid-carousel .carousel-item:nth-child(2){
+    background-image: url(../img/slider/wahaca2.jpg);
+}
+.fluid-carousel .carousel-item:nth-child(3){
+    background-image: url(../img/slider/wahaca3.jpg);
+}
+.boton{
+    color:var(--white) !important;
+    font-size: 24px;
+    background-color: var(--pink);
+    border: 1px solid var(--pink);
+    padding: 6px;
+}
+.boton:hover{
+    color:var(--pink);
+    background-color: transparent;
+    /* border: 1px solid var(--pink); */
+    text-decoration: none;
+}
+.carousel-item  h4{
+    margin-bottom: 24px;
+} */
+.color{
+    color:var(--white);
+}
+/*------------------------------------------------------SECCION MENU------------------------------------------------------------------------------------*/
+#menu{
+    background-color: var(--blue);
+    padding-bottom: 4%;
+}
+
+.card{
+    width: 100%;
+    margin-bottom: 4%;
+    
+}
+.card-title{
+    color: var(--pink);
+    text-align: center;
+    font-weight: bold;
+}
+.card-text{
+    font-size: var(--md) !important;
+}
+.btn{
+    background-color: var(--pink) !important;
+    border: 1px solid var(--pink) !important;
+}
+
+/*------------------------------------------------------SECCION RECETAS------------------------------------------------------------------------------------*/
+#recetas{
+    background-color: #bee2e9;
+    padding-bottom: 4%;
+}
+.h2_recetas{
+    color: var(--pink) !important;
+    text-align: center;
+}
+#video{
+    width: 100%;
+    margin:0 auto !important;
+    display:block;
+  }
+
+/*------------------------------------------------------SECCION NUESTROS RESTAURANTES------------------------------------------------------------------------------------*/
+#nuestros_restaurantes{
+    background-color: var(--yellow);
+    padding-bottom: 4%;
+}
+.h2_nuestrosRestaurantes{
+    color:#00a5ae !important;
+}
+.granada,.madrid{
+    text-align: center;
+}
+.info_granada,.info_madrid{
+    margin-top: 4%;
+}
+.card_header_acordeon{
+    padding: 0%;
+}
+
+/*------------------------------------------------------SECCION CONTACTA------------------------------------------------------------------------------------*/
+#contacta{
+    background-color: #f9cfd3;
+    padding-bottom: 4%;
+}
+.h2_contacta, .color_label_contacta{
+    color: #0052a1  !important;
+}
+.color_label_contacta{
+    font-size: var(--md);
+    font-weight: bold;
+}
+input, select, textarea{
+    border: 1px solid #0052a1 !important;
+}
+
+/*------------------------------------------------------FOOTER------------------------------------------------------------------------------------*/
+.copyrights{
+    margin-top:25px;
+    background: var(--black);
+    width: 100%;
+    }
+    
+footer.container-fluid.text-center.foot {
+    background: var(--black);
+    position: -webkit-sticky; 
+    position: absolute;
+    width:100%;
+      
+    }
+    
+.dark-line{
+    border-top: 1px solid #525252;
+    }
+    
+.white-txt{
+    color: var(--white);
+    }
+
+#iconos{
+    font-size: 2em;
+    padding:0  !important;
+    border:0  !important;
+    padding-top: 1% !important;
+    }
+#iconos a{
+    color:var(--white);
+    }
+#iconos a:hover{
+    color:var(--pink);
+}
+
+a.link{
+    color:var(--pink);
+    padding: 5px;
+    text-decoration: none !important;
+    }
+a.link:hover{
+    background-color:var(--pink);
+    color:var(--white);
+    text-decoration: none !important;
+    
+    }
+
+/*------------------------------------------------------MODAL------------------------------------------------------------------------------------*/
+.aceptar{
+    background-color: #28a745 !important;
+    border: 2px solid #28a745 !important;
+}
+.rechazar{
+    background-color: #dc3545 !important;
+    border: 2px solid #dc3545 !important;
+}
+
+
+
+
+
